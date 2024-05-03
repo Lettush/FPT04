@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        span {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Class Selector */
+        .class-name {
+            color: red;
+            background-color: pink;
+        }
+
+        /* ID Selector */
+        #id-name {
+            font-weight: bold;
+        }
+
+        .text {
+            color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Grouping Selector */
+        h1, h4, .parag {
+            color: orange;
+        }
+
+        /* Descendant Selector */
+        .ancestor p {
+            font-style: italic;
+            color: green;
+        }
+
+        /* Pseudo-classes */
+        a.link:hover {
+            color: plum;
+        }
+
+        a.link:active {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Element Selector -->
+    <span>This is styled using an element selector.</span>
+
+    <!-- Class Selector -->
+    <p class="class-name">This is styled using a class selector.</p>
+    <p class="class-name">This is styled using a class selector.</p>
+    <h3 class="class-name">This is a heading.</h3>
+
+    <!-- ID Selector -->
+    <p id="id-name">This is styled using an ID selector.</p>
+
+    <section>
+        <h2 class="text">text</h2>
+        <p class="text">text</p>
+        <span class="text">text</span>
+    </section>
+
+    <!-- Universal Selector -->
+    <div>This is styled using a universal selector.</div>
+    <p>This is also styled using a universal selector.</p>
+
+    <br>
+
+    <!-- Grouping Selector -->
+    <h1>Welcome to My Website</h1>
+    <p class="parag">This is a paragraph of text.</p>
+    <h4>About Me</h4>
+    <p class="parag">This is another paragraph of text.</p>
+
+    <br><br><br>
+
+    <!-- Descendant Selector -->
+    <div class="ancestor">
+        <p>This is styled using a descendant selector.</p>
+        <h3>This is a heading.</h3>
+    </div>
+
+    <!-- Pseudo-classes -->
+    <a href="#" class="link">This is styled using a pseudo-class.</a>
+</body>
+</html>
