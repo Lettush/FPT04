@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            display: block;
+            background-color: tomato;
+            width: 200px;
+            height: 100px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: aqua;
+            width: 500px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: greenyellow;
+            width: 400px;
+            height: 200px;
+        }
+
+        /* Flex and Grid */
+        .flex-container {
+            height: 200px;
+            background-color: lightgrey;
+            margin-bottom: 20px;
+
+            /* flex properties */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container {
+            height: 200px;
+            background-color: lightgrey;
+            
+            /* grid properties */
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Displays -->
+    <div class="block">This is a block element.</div>
+    <div class="inline">This is an inline element.</div>
+    <div class="inline-block">This is an inline-block element.</div>
+
+    <br><br>
+
+    <!-- Centering -->
+    <div class="flex-container">
+        <div class="centered-div">
+            Flex Container
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="centered-div">
+            Grid Container
+        </div>
+    </div>
+</body>
+</html>

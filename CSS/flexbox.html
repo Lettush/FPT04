@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styling */
+        .container {
+            height: 300px;
+            background-color: yellowgreen;
+            margin-bottom: 20px;
+        }
+
+        .flexItems {
+            width: 200px;
+            margin: 10px;
+            border: 2px black solid;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        /* Flex */
+        .flexContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* sets the alignment based on the MAIN axis */
+            align-items: stretch; /* based on the CROSS axis */
+        }
+
+        /* Flex Grow - Willingness to Grow */
+        .flexItem1 {
+            flex-grow: 0;
+        }
+
+        .flexItem2 {
+            flex-grow: 2;
+        }
+
+        .flexItem3 {
+            flex-grow: 10;
+        }
+
+        /* Flex Shrink - Willingness to Shrink */
+        .flexItem1 {
+            flex-shrink: 2; /* More willing to shrink */
+        }
+
+        .flexItem2 {
+            flex-shrink: 1; /* Default behavior, willing to shrink, but not as much as flex-shrink of 2 */
+        }
+
+        .flexItem3 {
+            flex-shrink: 0; /* Will not shrink */
+        }
+
+        /* Flex Basis - Sets the initial size of Flex Items */
+        .flexItem3 {
+            flex-basis: 300px; /* more prioritzed width */
+        }
+    </style>
+</head>
+<body>
+    <!-- First Flex Layout -->
+    <div class="container flexContainer">
+        <div class="flexItems flexItem1">1</div>
+        <div class="flexItems flexItem3">3</div>
+        <div class="flexItems flexItem1">1</div>
+    </div>
+
+    <!-- Second Flex Layout -->
+    <div class="container flexContainer">
+        <div class="flexItems flexItem1">1</div>
+        <div class="flexItems flexItem2">2</div>
+        <div class="flexItems flexItem3">3</div>
+    </div>
+</body>
+</html>

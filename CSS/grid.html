@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styling */
+        * {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #e3d9c1;
+        }
+
+        .grid-container {
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Grid */
+
+        /* Using px */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 300px;
+            grid-auto-rows: 100px 300px;
+        }
+
+        /* Using percentage */
+        .grid-container {
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        /* Using Fr */
+        .grid-container {
+            /* 1fr 2fr 1fr 2fr */
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Gaps */
+        .grid-container {
+            /* grid-column-gap: 20px;
+            grid-row-gap: 10px; */
+            gap: 7px;
+        }
+
+        /* Grid Area */
+        .grid-item-2 {
+            /*  
+                'grid-row-start', 'grid-column-start', 'grid-row-end', and 'grid-column-end'. 
+            */
+            grid-area: 2 / 1 / 5 / 3;
+        }
+
+        /* Remove Grid Area */
+        .grid-item-2 {
+            grid-area: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">Services</div>
+        <div class="grid-item grid-item-2">About Us</div>
+        <div class="grid-item grid-item-3">Contact Us</div>
+        <div class="grid-item grid-item-4">Mission</div>
+        <div class="grid-item grid-item-5">Vision</div>
+        <div class="grid-item grid-item-6">Featured Product</div>
+        <div class="grid-item grid-item-7">Product 1</div>
+        <div class="grid-item grid-item-8">Product 2</div>
+        <div class="grid-item grid-item-9">Product 3</div>
+    </div>
+    <div style="height: 2000px;"></div>
+</body>
+</html>
