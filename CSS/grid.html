@@ -72,6 +72,45 @@
         .grid-item-2 {
             grid-area: auto;
         }
+
+        /* MEDIA QUERIES */
+        /* 
+            @media media-type (media-feature/condition) {
+                * insert css codeblocks in here *
+            }
+
+            Mobile Devices: Less than 481px
+            iPads, Tablets: 481px - 768px
+            Small Screens, Laptops: 769px - 1024px
+            Desktops, Large Screens: 1025px - 1200px
+            Extra Large Screens, TV: 1201px and greater
+        */
+
+        /* Media Query for Large Screens */
+        @media screen and (min-width: 1025px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                background-color: burlywood;
+            }
+        }
+
+        /* Media Query for Small Screens */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Media Query for Tablets to Mobile Devices */
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .grid-item-7, .grid-item-8, .grid-item-9 {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
